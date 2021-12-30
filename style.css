@@ -1,0 +1,226 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+body{
+     display: flex;
+     width: 100%;
+     justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: rgb(216,227,225);
+    background: linear-gradient(0deg, rgba(216,227,225,0.9612219887955182) 86%, rgba(17,212,183,1) 86%);
+} 
+.main{
+    position: relative;
+    display: flex;
+    height: calc(100vh - 40px);
+    background: white;
+    width: 90%;
+    box-shadow: 0px 1px 1px 0px rgb(0, 0, 0,0.06);
+
+}
+.left{
+    position: relative;
+    flex: 30%;
+    background: white;
+}
+.right{
+    position: relative;
+    flex: 70%;
+    background: rgb(218, 211, 211);
+}
+.right::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: calc(100% - 120px);
+    top: 60px;
+    left: 0;
+    background-image: url(images/pattern.png);
+    opacity: 0.06;
+   
+   
+}
+.header, .for-flex{
+    height: 60px;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(241, 234, 234);
+}
+.img{
+    height: 100%;
+}
+.header .icons ul li{
+    list-style: none;
+    text-decoration: none;
+    
+} 
+.header .icons ul{
+    display: flex;
+}
+.header .icons ul li{
+ 
+ font-size: 1.5rem;
+ margin-left: 22px ;
+ color: #51585c ;
+}
+.img img{
+    height: 100%;
+    border-radius: 50%;
+}
+/* search */
+.search{
+    position: relative;
+    padding: 8px 15px;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    background-color: rgb(251, 246, 246);
+}
+input{
+    width: 100%;
+    padding: 10px 40px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+}
+.icon{
+   position:absolute;
+   top: 33%;
+   left: 30px;
+}
+/* colmus */
+.colums{
+    position: relative;
+    overflow-y: scroll;
+    height: calc(100% - 120px);
+    width: 100%;
+    position: relative;
+}
+
+.chatrow{
+    height: 70px;
+    display: flex;
+    padding: 8px 15px;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    border-top: 1px solid rgba(53, 50, 50, 0.061);
+}
+.chatrow:hover{
+    background-color: rgb(243, 243, 243);
+}
+.active{
+        background-color: rgb(230, 230, 230);
+}
+.img{
+    height: 100%;
+    border-radius: 50%; 
+    padding: 0 10px;
+}
+.chatrow .img img{
+    height: 100%;
+    border-radius: 50%; 
+}
+.chats{
+    width: 100%;
+    position: relative;
+}
+.chat{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 30px;
+}
+.chat h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.chat span{
+    color: #aaa;
+}
+.chattext p{
+    color: #aaa;
+}
+.chattext{
+    display: flex;
+    justify-content: space-between;
+}
+.chat_active p{
+    color: rgb(68, 66, 66);
+}
+.chattext span{
+    border-radius: 50%;
+    background-color: rgb(17, 212, 66);
+   padding: 5px 10px;
+   font-size: 0.6rem;
+   color: white;
+}
+/* right header start */
+.header-two{
+    border-left: 1px solid rgb(207, 207, 207);
+}
+.for-flex{
+    display: flex;
+}
+.content span{
+    color: #aaa;
+}
+.right_chat_box{
+    width: 100%;
+    height: calc(100% - 120px);
+    position: relative;
+    padding: 50px;
+    overflow-y: scroll;
+    
+}
+.massage{
+    display: flex;
+    position: relative;
+    width: 100%;
+   margin: 5px 0;
+   
+}
+.massage p{
+    position: relative;
+   max-width: 65%;
+   padding: 12px;
+   padding-right: 20px;
+   background-color: #dcf8c6;
+   border-radius: 10px;
+   font-size: 0.9rem;
+  
+}
+.my_massage{
+    justify-content: flex-end;
+}
+.your_massage p{
+    background-color: white;
+}
+.massage span{
+    color: #aaa;
+}
+.input{
+    width: 90%;
+}
+.write{
+    background-color: rgb(243, 243, 243);
+    height: 60px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20px;
+}
+.write a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: black;
+}
+
